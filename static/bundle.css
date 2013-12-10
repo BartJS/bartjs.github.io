@@ -1620,7 +1620,7 @@ body {
 }
 header {
   background: #f0db4f;
-  padding: 50px;
+  padding: 50px 0;
   position: relative;
   margin-bottom: 50px;
 }
@@ -1687,7 +1687,10 @@ section aside ul a:hover {
 }
 @media only screen and (max-width: 900px) {
   header img {
-    width: 80%;
+    width: 90%;
+  }
+  section {
+    width: 90%;
   }
   section article {
     float: none;

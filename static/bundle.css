@@ -1634,6 +1634,7 @@ header img {
   border: 25px solid #323330;
   display: block;
   margin: 0 auto;
+  max-width: 450px;
 }
 header:after {
   content: " ";
@@ -1684,7 +1685,10 @@ section aside ul a {
 section aside ul a:hover {
   color: #888;
 }
-@media all and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
+  header img {
+    width: 80%;
+  }
   section article {
     float: none;
     padding: 0;

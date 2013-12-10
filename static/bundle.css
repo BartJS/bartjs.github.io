@@ -1685,6 +1685,13 @@ section aside ul a {
 section aside ul a:hover {
   color: #888;
 }
+section aside ul a:hover small {
+  color: #999;
+}
+section aside ul a small {
+  font-size: 0.7em;
+  color: #444;
+}
 @media only screen and (max-width: 900px) {
   header img {
     width: 90%;

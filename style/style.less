@@ -6,26 +6,31 @@
 
 @arrow-size: 50px;
 @max-width: 900px;
+@black: #323330;
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    .js-yellow();
+    .grey-gradient();
     font-family: 'Exo 2', sans-serif;
     font-size: 18px;
-    color: #323330;
+    color: @black;
 }
 
 header {
-    .grey-gradient();
+    .js-yellow();
+
     padding: 50px;
     position: relative;
     margin-bottom: @arrow-size;
 
     img {
         .drop-shadow();
+        .rounded(25px);
+        border: 25px solid @black;
+
         display: block;
         margin: 0 auto;
     }
@@ -42,7 +47,7 @@ header {
         left: 50%;
 
         border: @arrow-size solid transparent;
-        border-top-color: #eeeeee;
+        border-top-color: @color-yellow;
 
     }
 }

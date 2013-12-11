@@ -1618,6 +1618,25 @@ body {
   font-size: 18px;
   color: #323330;
 }
+h2,
+h3,
+h4 {
+  margin-bottom: 10px;
+}
+h3 {
+  font-size: 1.3em;
+}
+h3,
+h4 {
+  margin: 20px 0;
+}
+ul {
+  list-style-position: inside;
+  margin: 10px 0;
+}
+p {
+  margin: 10px 0;
+}
 header {
   background: #f0db4f;
   padding: 50px 0;

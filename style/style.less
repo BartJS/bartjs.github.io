@@ -7,6 +7,7 @@
 @arrow-size: 50px;
 @max-width: 900px;
 @black: #323330;
+@member-height: 60px;
 
 * {
     box-sizing: border-box;
@@ -44,7 +45,7 @@ p {
 header {
     .js-yellow();
 
-    padding: 50px 10px;
+    padding: (50px + @member-height) 10px 50px;
     position: relative;
     margin-bottom: @arrow-size;
 
@@ -123,8 +124,38 @@ section {
     }
 }
 
+
+.member-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    .opacity(0.3);
+
+    .clearfix();
+    height: @member-height;
+    overflow: hidden;
+
+    ul {
+        width: 4000px;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            height: @member-height;
+            float: left;
+
+            img {
+                max-height: @member-height;
+                .grayscale();
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: @max-width) {
-    header img {
+    header object {
         width: 90%;
     }
     section {

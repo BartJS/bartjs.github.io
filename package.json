@@ -13,5 +13,9 @@
     "build": "npm run build-css && npm run build-js"
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "~2.4.1",
+    "jquery-browserify": "~1.8.1"
+  }
 }

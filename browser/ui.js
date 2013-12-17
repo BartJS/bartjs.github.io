@@ -4,7 +4,6 @@ var $ = require('jquery-browserify'),
     compiled = _.template('<li><img src="<%= photo.photo_link %>" alt="<%= name %>" /></li>');
 
 var item = function (member) {
-  console.log(member)
   return compiled(member);
 }, hasPhoto = function (member) {
   return member.photo && member.photo.photo_link;

@@ -1721,9 +1721,15 @@ section aside ul a small {
   font-size: 0.7em;
   color: #444;
 }
-section aside .event-list header {
+section aside .event-list header a {
   background: #f0db4f;
   padding: 20px 10px;
+  color: #323330;
+  text-decoration: none;
+  display: block;
+}
+section aside .event-list header a:hover {
+  color: #666;
 }
 .member-list {
   position: relative;

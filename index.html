@@ -68,7 +68,7 @@
     <header>
       <h5><a href="<%= event_url %>"><%= name %></a></h5>
     </header>
-    <p>Plasser: <%= yes_rsvp_count %>/<%= rsvp_limit %></p>
+    <p>Registrerte: <%= yes_rsvp_count %><small>/<%= rsvp_limit %> (<%= (rsvp_limit-yes_rsvp_count) %> ledige)</small></p>
   </article>
   </script>
   <script src="static/bundle.js"></script>

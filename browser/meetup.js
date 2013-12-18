@@ -5,7 +5,8 @@ var config = require('./config'),
 
 var getUrl = function (method, args) {
   args = _.assign(args, {
-    key: config.API_KEY
+    key: config.API_KEY,
+    callback: '?'
   });
   return _.reduce(args, function(result, val, key) {
     return result + key + '=' + val + '&';
@@ -21,11 +22,17 @@ var Meetup = function (meetupURL) {
 
 Meetup.prototype.getMembers = function () {
   var url = getUrl('members', {
-    group_urlname: this.id,
-    callback: '?'
+    group_urlname: this.id
   });
   return request(url);
 };
+
+Meetup.prototype.getEvents = function () {
+  var url = getUrl('events', {
+    group_urlname: this.id
+  });
+  return request(url);
+}
 
 module.exports = Meetup;
 module.exports.connectTo = function (meetupURL)  {

@@ -14,13 +14,13 @@
 </head>
 <body>
   <div class="wrap">
-    <header>
+    <header class="main-header">
       <h1>
         <object data="assets/logo.svg" id="svg" type="image/svg+xml">logo</object>
       </h1>
     </header>
     <section>
-      <article>
+      <article class="main-article">
         <h2>Hva er Bart.JS?</h2>
         <p>Det er en nyoppstartet Meetup i Trondheim som konsentrerer seg om all-things Javascript.</p>
         <h3>Neste meetup er i februar 2014</h3>
@@ -50,6 +50,11 @@
           <li><a href="mailto:bartjs.trh@gmail.com"><i class="fa-li fa fa-envelope"></i>bartjs.trh<small>@gmail.com</small></a></li>
           <li><a href="http://meetup.com/bartjs"><i class="fa-li fa fa-users"></i>Meetup</a></li>
         </ul>
+
+        <h4>Kommende events</h4>
+        <div class="event-list">
+
+        </div>
       </aside>
       <div class="footer-space"></div>
     </section>
@@ -58,6 +63,14 @@
     <ul id="members"></ul>
   </div>
 
+  <script type="text/x-template" id="event-template">
+  <article>
+    <header>
+      <h5><a href="<%= event_url %>"><%= name %></a></h5>
+    </header>
+    <p>Plasser: <%= yes_rsvp_count %>/<%= rsvp_limit %></p>
+  </article>
+  </script>
   <script src="static/bundle.js"></script>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -49,7 +49,7 @@ p {
 
 }
 
-header {
+.main-header {
     .js-yellow();
 
     padding: 50px 10px 50px;
@@ -91,7 +91,7 @@ section {
 
     padding-bottom: @member-height;
 
-    article {
+    .main-article {
         width: 60%;
         float: left;
         padding-right: 30px;
@@ -130,6 +130,13 @@ section {
                 }
             }
 
+        }
+
+        .event-list {
+            header {
+                .js-yellow();
+                padding: 20px 10px;
+            }
         }
     }
 }
@@ -175,7 +182,7 @@ section {
     section {
         width: 90%;
 
-        article {
+        .main-article {
             float: none;
             padding: 0;
             width: 100%;

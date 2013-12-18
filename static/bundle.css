@@ -1646,13 +1646,13 @@ ul {
 p {
   margin: 10px 0;
 }
-header {
+.main-header {
   background: #f0db4f;
   padding: 50px 10px 50px;
   position: relative;
   margin-bottom: 50px;
 }
-header object {
+.main-header object {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -1664,7 +1664,7 @@ header object {
   margin: 0 auto;
   width: 450px;
 }
-header:after {
+.main-header:after {
   content: " ";
   display: block;
   position: absolute;
@@ -1689,15 +1689,15 @@ section:after {
 section:after {
   clear: both;
 }
-section article {
+section .main-article {
   width: 60%;
   float: left;
   padding-right: 30px;
 }
-section article h2 {
+section .main-article h2 {
   font-size: 1.4em;
 }
-section article p {
+section .main-article p {
   text-align: justify;
 }
 section aside {
@@ -1720,6 +1720,10 @@ section aside ul a:hover small {
 section aside ul a small {
   font-size: 0.7em;
   color: #444;
+}
+section aside .event-list header {
+  background: #f0db4f;
+  padding: 20px 10px;
 }
 .member-list {
   position: relative;
@@ -1784,7 +1788,7 @@ section aside ul a small {
   section {
     width: 90%;
   }
-  section article {
+  section .main-article {
     float: none;
     padding: 0;
     width: 100%;

@@ -1662,7 +1662,7 @@ header object {
   border: 25px solid #323330;
   display: block;
   margin: 0 auto;
-  max-width: 450px;
+  width: 450px;
 }
 header:after {
   content: " ";

@@ -7,6 +7,7 @@
 @arrow-size: 50px;
 @max-width: 900px;
 @black: #323330;
+@white: #ffffff;
 @member-height: 60px;
 
 * {
@@ -134,9 +135,36 @@ section {
 
         .event-list {
             header {
+                .js-yellow();
+                padding: 0;
+                margin-bottom: 20px;
+
+                .rsvp-stats {
+                    color: @white;
+                    font-style: bold;
+                    text-align: right;
+                    margin: 0;
+                    margin-top: -15px;
+                    padding: 0 20px 20px;
+
+                    .yes {
+                        font-size: 2.5em;
+                    }
+
+                    .seperator, .total {
+                        color: @black;
+                        font-size: 1.8em;
+                    }
+
+                    .rest {
+                        display: block;
+                        margin-top: -15px;
+                        color: @black;
+                    }
+                }
+
                 a {
-                    .js-yellow();
-                    padding: 20px 10px;
+                    padding: 20px 20px 0;
                     color: @black;
                     text-decoration: none;
                     display: block;

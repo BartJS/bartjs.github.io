@@ -1721,9 +1721,34 @@ section aside ul a small {
   font-size: 0.7em;
   color: #444;
 }
-section aside .event-list header a {
+section aside .event-list header {
   background: #f0db4f;
-  padding: 20px 10px;
+  padding: 0;
+  margin-bottom: 20px;
+}
+section aside .event-list header .rsvp-stats {
+  color: #ffffff;
+  font-style: bold;
+  text-align: right;
+  margin: 0;
+  margin-top: -15px;
+  padding: 0 20px 20px;
+}
+section aside .event-list header .rsvp-stats .yes {
+  font-size: 2.5em;
+}
+section aside .event-list header .rsvp-stats .seperator,
+section aside .event-list header .rsvp-stats .total {
+  color: #323330;
+  font-size: 1.8em;
+}
+section aside .event-list header .rsvp-stats .rest {
+  display: block;
+  margin-top: -15px;
+  color: #323330;
+}
+section aside .event-list header a {
+  padding: 20px 20px 0;
   color: #323330;
   text-decoration: none;
   display: block;

@@ -26,6 +26,13 @@
     min-height: calc(@height ~"-" @margin);
 }
 
+.width-minus (@width, @margin) {
+    width: -moz-calc(@width ~"-" @margin);
+    width: -webkit-calc(@width ~"-" @margin);
+    width: calc(@width ~"-" @margin);
+}
+
+
 .transition-on(@duration:0.2s, @ease:ease-in-out) {
   -webkit-transition: filter, opacity  @duration @ease;
   -moz-transition: filter, opacity  @duration @ease;

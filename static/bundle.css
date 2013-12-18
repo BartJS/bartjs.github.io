@@ -1646,13 +1646,15 @@ ul {
 p {
   margin: 10px 0;
 }
-.main-header {
+.main-header,
+.scrolled-down {
   background: #f0db4f;
   padding: 50px 10px 50px;
   position: relative;
   margin-bottom: 50px;
 }
-.main-header object {
+.main-header object,
+.scrolled-down object {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -1664,7 +1666,8 @@ p {
   margin: 0 auto;
   width: 450px;
 }
-.main-header:after {
+.main-header:after,
+.scrolled-down:after {
   content: " ";
   display: block;
   position: absolute;
@@ -1674,6 +1677,61 @@ p {
   left: 50%;
   border: 50px solid transparent;
   border-top-color: #f0db4f;
+}
+.scrolled-down {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  z-index: 1000;
+  top: -100px;
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  -webkit-opacity: 0;
+  opacity: 0;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.scrolled-down span {
+  width: -moz-calc(50% - 30px);
+  width: -webkit-calc(50% - 30px);
+  width: calc(50% - 30px);
+  font-size: 2em;
+  line-height: 1em;
+  display: inline-block;
+}
+.scrolled-down span:first-child {
+  text-align: right;
+}
+.scrolled-down object {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  border: 4px solid #323330;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.scrolled-down.scroll-header-visible {
+  top: 0;
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  -webkit-opacity: 1;
+  opacity: 1;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+  filter: alpha(opacity=100);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.scrolled-down:after {
+  margin: 0 0 0 -25px;
+  border-width: 25px;
 }
 section {
   width: 60%;
@@ -1828,5 +1886,13 @@ section aside .event-list header a:hover {
     margin-top: 40px;
     float: none;
     width: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .scrolled-down object {
+    display: block;
+  }
+  .scrolled-down span {
+    display: none;
   }
 }

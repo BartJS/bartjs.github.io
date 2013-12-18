@@ -6,6 +6,7 @@
 
 @arrow-size: 50px;
 @max-width: 900px;
+@max-width-header: 480px;
 @black: #323330;
 @white: #ffffff;
 @member-height: 60px;
@@ -50,7 +51,7 @@ p {
 
 }
 
-.main-header {
+.main-header, .scrolled-down {
     .js-yellow();
 
     padding: 50px 10px 50px;
@@ -81,7 +82,48 @@ p {
 
         border: @arrow-size solid transparent;
         border-top-color: @color-yellow;
+    }
+}
 
+.scrolled-down {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    z-index: 1000;
+
+    top: -100px;
+    .opacity(0);
+    .transition();
+
+    span {
+        .width-minus(50%, 30px);
+        font-size: 2em;
+        line-height: 1em;
+        display: inline-block;
+    }
+
+    span:first-child {
+        text-align: right;
+    }
+
+    object {
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+        border: 4px solid @black;
+        .rounded(2px);
+    }
+
+    &.scroll-header-visible {
+        top: 0;
+        .opacity(1);
+        .transition();
+    }
+
+    &:after {
+        margin: 0 0 0 (-@arrow-size / 2);
+        border-width: @arrow-size / 2;
     }
 }
 
@@ -104,7 +146,6 @@ section {
         p {
             text-align: justify;
         }
-
     }
     aside {
         width: 40%;
@@ -228,6 +269,17 @@ section {
             margin-top: 40px;
             float: none;
             width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: @max-width-header) {
+    .scrolled-down {
+        object {
+            display: block;
+        }
+        span {
+            display: none;
         }
     }
 }

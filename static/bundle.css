@@ -1795,6 +1795,9 @@ section aside .event-list header .rsvp-stats {
 section aside .event-list header .rsvp-stats .yes {
   font-size: 2.5em;
 }
+section aside .event-list header .rsvp-stats.full .yes {
+  color: #5872A8;
+}
 section aside .event-list header .rsvp-stats .seperator,
 section aside .event-list header .rsvp-stats .total {
   color: #323330;

@@ -6,7 +6,6 @@
 
 @arrow-size: 50px;
 @max-width: 900px;
-@max-width-full: 1200px;
 @max-width-header: 480px;
 @black: #323330;
 @white: #ffffff;
@@ -161,13 +160,17 @@ p {
         .presentations {
             .clearfix();
 
-            .meetup header {
-                .clearfix();
+            article {
+                float: left;
+                width: 50%;
+
                 hgroup {
-                    float: left;
-                    width: 50%;
 
                     h3 {
+                        display: table-cell;
+                        vertical-align: bottom;
+                        height: 70px;
+
                         margin-bottom: 0;
                     }
 
@@ -175,19 +178,7 @@ p {
                         margin: 0 0 10px;
                         font-style: italic;
                     }
-
-                    &:nth-child(odd) {
-                        padding-right: 10px;
-                    }
-                    &:nth-child(even) {
-                        padding-left: 10px;
-                    }
                 }
-            }
-
-            article {
-                float: left;
-                width: 50%;
 
                 .external-iframe {
                     position: relative;
@@ -214,7 +205,7 @@ p {
                     padding-left: 10px;
                 }
 
-                a {
+                .button-group a {
                     .button(@color-yellow, 20%);
                     text-decoration: none;
                     color: @black;
@@ -359,8 +350,6 @@ p {
     }
 }
 
-@media only screen and (max-width: @max-width-full) {
-}
 
 @media only screen and (max-width: @max-width) {
     .main-header object {
@@ -374,6 +363,8 @@ p {
             float: none;
             padding: 0;
             width: 100%;
+
+
         }
         aside {
             margin-top: 40px;
@@ -393,6 +384,21 @@ p {
         }
         span {
             display: none;
+        }
+    }
+
+    .content-wrapper .full-width {
+
+        .presentations {
+            .clearfix();
+
+            article {
+                float: none;
+                width: 100%;
+                padding: 0 !important;
+
+                margin-bottom: 20px;
+            }
         }
     }
 }

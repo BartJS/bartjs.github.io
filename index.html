@@ -22,37 +22,63 @@
   <div class="wrap">
     <header class="main-header">
       <h1>
-        <object data="assets/logo.svg" id="svg" type="image/svg+xml">logo</object>
+        <a href="index.html"><object data="assets/logo.svg" id="svg" type="image/svg+xml">logo</object></a>
       </h1>
     </header>
     <header class="scrolled-down">
-      <h1>
+      <h1><a href="index.html">
         <span>BartJS</span>
         <object data="assets/logo.svg" type="image/svg+xml">logo</object>
         <span>Trondheim</span>
-      </h1>
+      </a></h1>
     </header>
-    <section>
+    <section class="content-wrapper">
       <article class="main-article">
         <h2>Hva er Bart.JS?</h2>
         <p>Det er en nyoppstartet Meetup i Trondheim som konsentrerer seg om all-things Javascript.</p>
         <h3>Neste meetup er 5. mars 2014</h3>
-          <h4>Applikasjonsarkitek­tur og kartbiblioteker</h4>
-          <p>Agenda for dagen</p>
-          <ul>
-            <li>Applikasjonsarkitektur v/<a href="https://twitter.com/rinojohnsen">Rino Andre Johnsen</a></li>
-            <li>Kartbiblioteker v/<a href="https://twitter.com/3milm">Emil Mork</a></li>
-          </ul>
-          <p><em>Ca 30 min per innslag.</em></p>
 
-          <p>Meta-informasjon</p>
-          <ul>
-            <li>Plassering: Norges Kreative Høyskoles lokaler i Kjøpmannsgata 65</li>
-            <li>Maks antall påmeldte: 50 stk </li>
-          </ul>
+        <h4>Applikasjonsarkitek­tur og kartbiblioteker</h4>
+        <p>Agenda for dagen</p>
+        <ul>
+          <li><a href="#arkitektur">Applikasjonsarkitektur</a> v/<a href="https://twitter.com/rinojohnsen">Rino Andre Johnsen</a> <small>(30 min)</small></li>
+          <li><a href="#kart">Kartbiblioteker</a> v/<a href="https://twitter.com/3milm">Emil Mork</a> <small>(30 min)</small></li>
+          <li><a href="#promises">ES6 Promises</a> v/<a href="https://twitter.com/mogstad">Bjarne Mogstad</a> <small>(15 min)</small></li>
+        </ul>
+
+        <p>Meta-informasjon</p>
+        <ul>
+          <li>Plassering: Norges Kreative Høyskoles lokaler i Kjøpmannsgata 65</li>
+          <li>Maks antall påmeldte: 50 stk </li>
+        </ul>
+
+        <div class="details">
+          <h4>Detaljert informasjon</h4>
+
+          <h5 id="arkitektur">Applikasjonsarkitektur v/<a href="https://twitter.com/rinojohnsen">Rino Andre Johnsen</a> <small>(30 min)</small></h5>
+
+          <p>Moderne verktøy og plattformer bidrar til å forenkle oppgaven med å bygge applikasjoner, men de erstatter ikke behovet for å utforme applikasjoner nøye, basert på spesifikke scenarier og krav som kan være unike for hvert prosjekt. I denne lyntalen skal vi se på en arkitektonisk stil som kalles for «Utopian Pragmatism» som tar for seg denne problemstillingen.</p>
+
+          <p>I stedet for å se på scenarier og krav som begrensninger, presenterer «Utopian Pragmatism» en måte å inkludere og integrere forskjeller, ikke gjennom et kompromiss eller ved å velge side, men ved å knytte motstridende interesser i en gordisk knute.</p>
+
+          <p>Det blir teori og eksempler på hvordan denne stilen kan brukes i JavaScript med hjelp av verktøyet Cujo.js.</p>
+
+
+          <h5 id="kart">Kartbiblioteker v/<a href="https://twitter.com/3milm">Emil Mork</a> <small>(30 min)</small></h5>
+          <p>En introduksjon til kart biblioteker som finnes for Javascript, med fokus på OpenLayers og Leaflet. Vi ser litt på hvordan kart-biblioteker fungerer og sammenligner OpenLayers og Leaflet ved å lage en kartapplikasjon.</p>
+
+
+          <h5 id="promises">ES6 Promises v/<a href="https://twitter.com/mogstad">Bjarne Mogstad</a> <small>(15 min)</small></h5>
+          <p>Promises har det siste året tatt JavaScript miljøet med storm. Nå har Promises blitt en del av ECMAScript 6. Vi tar en kort introduksjon til Promises og ser hvordan dette vil endre hvoran vi skriver asynkron JavaScript.</p>
+        </div>
+
         <p>Dersom du er interessert i å ta delta eller har idéer til BartJS kan dere ta kontakt ved hjelp av noen av de nevnte sosiale medier.</p>
       </article>
       <aside>
+        <ul class="navigation">
+          <li><a href="presentations.html"><i class="fa fa-laptop"></i>Tidligere presentasjoner</a></li>
+        </ul>
+
         <ul class="fa-ul">
           <li><a href="https://github.com/bartjs"><i class="fa-li fa fa-github"></i>@bartjs</a></li>
           <li><a href="http://twitter.com/_bartjs"><i class="fa-li fa fa-twitter"></i>@_bartjs</a></li>

@@ -39,3 +39,14 @@
   -o-transition: filter, opacity  @duration @ease;
   transition: filter, opacity  @duration @ease;
 }
+
+
+.button (@color: @color-gray, @lighten: 4%) {
+  display: block;
+  padding: 5px 15px;
+  background: @color;
+
+  &:hover {
+      background: lighten(@color, @lighten);
+  }
+}

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>BartJS</title>
+  <meta name="description" content="BartJS - Javascript programmering Meetup i Trondheim">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="/favicon.png">
+
+
+  <link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="static/bundle.css" />
+
+  <meta property="og:title" content="BartJS" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://bartjs.github.io/" />
+  <meta property="og:image" content="http://bartjs.github.io/assets/logo.png" />
+  <meta property="og:description" content="BartJS - Javascript programmering Meetup i Trondheim" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="main-header">
+      <h1>
+        <a href="index.html"><object data="assets/logo.svg" id="svg" type="image/svg+xml">logo</object></a>
+      </h1>
+    </header>
+    <header class="scrolled-down">
+      <h1><a href="index.html">
+        <span>BartJS</span>
+        <object data="assets/logo.svg" type="image/svg+xml">logo</object>
+        <span>Trondheim</span>
+      </a></h1>
+    </header>
+    <section class="content-wrapper">
+      <section class="main-article full-width">
+        <div class="presentations">
+          <section>
+            <header><h2>Meetup 04. februar 2014</h2></header>
+
+
+            <div class="meetup">
+              <header>
+                <hgroup>
+                  <h3>Functional Reactive Programming</h3>
+                  <h4>av <a href="http://twitter.com/mikaelbrevik">Mikael Brevik</a></h4>
+                </hgroup>
+
+                <hgroup>
+                  <h3>Fremtidsrettet webgrafikk med SVG</h3>
+                  <h4>av <a href="http://twitter.com/mollerse">Stian Veum Møllersen</a></h4>
+                </hgroup>
+              </header>
+              <div class="slideshows">
+                <article>
+                  <div class="external-iframe">
+                    <img class="ratio" src="http://placehold.it/16x9"/>
+                    <iframe src="http://git.mikaelb.net/presentations/bartjs/frp" allowfullscreen></iframe>
+                  </div>
+                  <a href="http://git.mikaelb.net/presentations/bartjs/frp">Full</a>
+                  <a href="https://github.com/mikaelbr/presentations/tree/gh-pages/bartjs/frp-livecode">Kode</a>
+                </article>
+
+                <article>
+                  <div class="external-iframe">
+                    <img class="ratio" src="http://placehold.it/16x9"/>
+                    <iframe src="http://mollerse.github.io/presentations/svg-bartjs" allowfullscreen></iframe>
+                  </div>
+                  <a href="http://mollerse.github.io/presentations/svg-bartjs">Full</a>
+                  <a href="https://github.com/mollerse/presentations/tree/master/svg-bartjs">Kode</a>
+                </article>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </section>
+      <div class="footer-space"></div>
+    </section>
+  </div>
+  <div class="member-list">
+    <ul id="members"></ul>
+  </div>
+
+  <script type="text/x-template" id="event-template">
+  <article>
+    <header>
+      <h5><a href="<%= event_url %>"><%= name %></a></h5>
+      <p class="rsvp-stats <%= (waitlist_count > 0) ? 'full' : '' %>">
+        <span class="yes"><%= yes_rsvp_count %></span>
+        <span class="seperator">/</span>
+        <span class="total"><%= rsvp_limit %></span>
+        <span class="rest">(<%= (rsvp_limit-yes_rsvp_count) %> ledige
+          <% if(waitlist_count > 0) { %>
+            , <%= waitlist_count %> i venteliste
+          <% } %>)
+        </span>
+      </p>
+    </header>
+  </article>
+  </script>
+  <script src="static/bundle.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-46346506-1', 'bartjs.github.io');
+    ga('send', 'pageview');
+
+  </script>
+</body>
+</html>

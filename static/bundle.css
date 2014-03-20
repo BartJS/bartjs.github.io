@@ -280,7 +280,7 @@ a img {
 }
 /* makes the font 33% larger relative to the icon container */
 .fa-lg {
-  font-size: 1.3333333333333333em;
+  font-size: 1.33333333em;
   line-height: 0.75em;
   vertical-align: -15%;
 }
@@ -297,12 +297,12 @@ a img {
   font-size: 5em;
 }
 .fa-fw {
-  width: 1.2857142857142858em;
+  width: 1.28571429em;
   text-align: center;
 }
 .fa-ul {
   padding-left: 0;
-  margin-left: 2.142857142857143em;
+  margin-left: 2.14285714em;
   list-style-type: none;
 }
 .fa-ul > li {
@@ -310,13 +310,13 @@ a img {
 }
 .fa-li {
   position: absolute;
-  left: -2.142857142857143em;
-  width: 2.142857142857143em;
-  top: 0.14285714285714285em;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
   text-align: center;
 }
 .fa-li.fa-lg {
-  left: -1.8571428571428572em;
+  left: -1.85714286em;
 }
 .fa-border {
   padding: .2em .25em .15em;
@@ -1776,6 +1776,17 @@ p {
   display: table;
 }
 .content-wrapper .main-article .presentations:after {
+  clear: both;
+}
+.content-wrapper .main-article .presentations > section {
+  *zoom: 1;
+}
+.content-wrapper .main-article .presentations > section:before,
+.content-wrapper .main-article .presentations > section:after {
+  content: " ";
+  display: table;
+}
+.content-wrapper .main-article .presentations > section:after {
   clear: both;
 }
 .content-wrapper .main-article .presentations article {

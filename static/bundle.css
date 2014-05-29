@@ -1780,6 +1780,7 @@ p {
 }
 .content-wrapper .main-article .presentations > section {
   *zoom: 1;
+  margin-bottom: 10%;
 }
 .content-wrapper .main-article .presentations > section:before,
 .content-wrapper .main-article .presentations > section:after {

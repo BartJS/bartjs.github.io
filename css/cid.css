@@ -22,7 +22,7 @@ ul {
   margin: 0;
 }
 
-li, h3 {
+li, h3, .rules p {
   font-size: 2.5em;
   line-height: 1.7em;
   color: #ccc;
@@ -38,6 +38,43 @@ li, h3 {
     font-size: 1.25em;
     margin-bottom: 15px;
     color: #fff;
+}
+
+.map {
+  height: 200px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.rules {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 0px 10px 100px 10px;
+}
+.rules p {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+.rules ol {
+  font-size: 0.5em;
+}
+
+.join {
+  background: #58ca8e;
+  padding: 20px 30px;
+  border-radius: 10px;
+  color: #000;
+  font-weight: bold;
+  font-size: 2em;
+}
+.join:hover {
+  text-decoration: none;
+  background: #70d39f;
+}
+.join-wrapper {
+  padding: 50px 10px;
+  text-align: center;
 }
 
 .sponsors img {

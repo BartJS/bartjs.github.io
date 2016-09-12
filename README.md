@@ -25,7 +25,7 @@ Before the round starts, help the contestants with setting up the editor and mak
 
 Since the audience will be the judge, let them clearly know what the rules are so that they can easily spot anyone who is cheating and disqualify them from the competition.
 
-When you are ready to start the round, count everyone down and set a 15 minute timer that the audience can clearly see. Once the 15 minutes are over tell everyone to stop coding, save their file and open it up in their favorite browser for everyone to vote on. Use a voting service like https://www.mentimeter.com/ to make it easy for everyone to vote.
+When you are ready to start the round, count everyone down and set a 15 minute timer that the audience can clearly see. Once the 15 minutes are over tell everyone to stop coding, save their file and open it up in their favorite browser for everyone to vote on. Use a voting service like https://www.mentimeter.com to make it easy for everyone to vote.
 
 ### Instructions to the Contestants
 Print the following instructions out and make it available for each contestant to see, by for example attaching it to the monitor in front of them that is facing the audience.
